@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/24/user/945041).
-* Наставник: `Неизвестно`.
+* Студент: [Олеся Ситнова](https://up.htmlacademy.ru/htmlcss/24/user/945041).
+* Наставник: [Ирина Шефер](https://htmlacademy.ru/profile/shefer)
 
 ---
 
