@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: "PTSans-Regular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  background-image: url("img/sedona-big.jpg");
+  font-weight: normal;
+  align: center;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.about p {
+  line-height: 26px;
+}
+.about h2 {
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+.reasons-item h3 {
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+}
+.text-white {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.text-black {
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  color: #000000;
+  background-color: #eeeeee;
+  font-weight: bold;
+}
+.background-grey {
+  background-color: #eeeeee;
+}
+.booking h2 {
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+.booking p {
+  line-height: 24px;
+  color: #333333;
+}
+.booking-form .find {
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.booking-form .text-white {
+font-family: "PTSans-Bold", Arial, sans-serif;
+font-size: 21px;
+line-height: 26px;
+text-align: center;
+color: #ffffff;
+background-color: #766357;
+border: none;
+text-transform: uppercase;
+font-weight: bold;
+}
+.booking-form:hover .text-white,
+.booking-form:focus .text-white {
+  background-color: #604e43;
+}
+.booking-form:active .text-white {
+  color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
+}
+.booking-form:hover  .find,
+.booking-form:focus  .find{
+    background-color: #669ec0;
+}
+.booking-form:active .find {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.booking-form input{
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  align: left;
+  text-transform: uppercase;
+}
+.booking-form:hover input,
+.booking-form:focus input {
+  color: #000000;
+  background-color: #ebebeb;
+}
+.booking-form:active input{
+  background-color: #ffffff;
+  border: 2px;
+  border-color: #e5e5e5;
+}
+.booking-form label {
+  font: inherit
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: bold;
+  align: left;
+  text-transform: uppercase;
+}
+#adalt {
+  font: inherit
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  align: center;
+}
+#children {
+font: inherit
+font-family: "PTSans-Bold", Arial, sans-serif;
+line-height: 26px;
+color: #000000;
+background-color: #f2f2f2;
+font-weight: bold;
+align: center;
+}
+button.modal-close {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px;
+  border-color: #000000;
+}
+.main-footer span {
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+.footer-copyright span {
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.footer-copyright:hover img,
+.footer-copyright:focus img {
+  background-color: #81b3d2;
+}
+.footer-copyright:active img {
+  background-color: #bdbbbc;
+}
