@@ -4,13 +4,33 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  background-image: url("img/sedona-big.jpg");
+  background-image: url("../img/sedona-big.jpg");
   font-weight: normal;
-  align: center;
+  text-align: center;
   text-transform: uppercase;
+  background-repeat: no-repeat;
+}
+.main-navigation {
+  background-color: #ffffff;
+
+}
+.logo {
+  display: block;
+  width: 140;
+  height: 71px;
+  background: url("../img/logo-sedona.svg");
+  background-repeat: no-repeat;
+
 }
 a {
   text-decoration: none;
+}
+.site-navigation:hover a,
+.site-navigation:focus a {
+  color: #81b3d2;
+}
+.site-navigation:active a {
+  color: rgba(0, 0, 0, 0.3);
 }
 .site-navigation {
   list-style: none;
@@ -40,6 +60,12 @@ a {
 .text-white {
   color: #ffffff;
   background-color: #81b3d2;
+
+}
+.reasons-item .text-white {
+  background: #81b3d2;
+  background-repeat: repeat;
+
 }
 .text-black {
   font-family: "PTSans-Bold", Arial, sans-serif;
@@ -74,15 +100,15 @@ a {
   font-weight: bold;
 }
 .booking-form .text-white {
-font-family: "PTSans-Bold", Arial, sans-serif;
-font-size: 21px;
-line-height: 26px;
-text-align: center;
-color: #ffffff;
-background-color: #766357;
-border: none;
-text-transform: uppercase;
-font-weight: bold;
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #766357;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .booking-form:hover .text-white,
 .booking-form:focus .text-white {
@@ -90,7 +116,7 @@ font-weight: bold;
 }
 .booking-form:active .text-white {
   color: rgba(255, 255, 255, 0.3);
-    background-color: #503e33;
+  background-color: #503e33;
 }
 .booking-form:hover  .find,
 .booking-form:focus  .find{
@@ -141,19 +167,20 @@ font-weight: bold;
   align: center;
 }
 #children {
-font: inherit
-font-family: "PTSans-Bold", Arial, sans-serif;
-line-height: 26px;
-color: #000000;
-background-color: #f2f2f2;
-font-weight: bold;
-align: center;
+  font: inherit
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  align: center;
 }
 button.modal-close {
   color: #000000;
   background-color: #ffffff;
   border: 1px;
   border-color: #000000;
+  display: none;
 }
 .main-footer span {
   font-family: "PTSans-Bold", Arial, sans-serif;
@@ -162,6 +189,12 @@ button.modal-close {
   color: #000000;
   font-weight: bold;
   background-color: #ffffff;
+}
+.footer-social {
+  text-align: center;
+}
+.footer-social ul {
+  color
 }
 .footer-copyright span {
   line-height: 26px;
@@ -174,4 +207,81 @@ button.modal-close {
 }
 .footer-copyright:active img {
   background-color: #bdbbbc;
+}
+
+.inner-page {
+  color: #000000;
+  background-color: #ffffff
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.hotel-name h3{
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-align: left;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+
+}
+.hotel-name:hover h3,
+.hotel-name:focus h3 {
+  color: #81b3d2;
+  background-color: #ffffff;
+}
+.hotel-name:active h3, {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+.hotel-top {
+  font-family: "PTSans-Regular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: regular;
+  text-align: left;
+  background-color: #ffffff;
+  background-repeat: repeat;
+}
+.hotel-top .rate {
+  color: #666666;
+  text-align: center;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+}
+.hotel-top .hotel-details {
+  font: inherit;
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+}
+.hotel-top:hover .hotel-details,
+.hotel-top:focus .hotel-details {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+.hotel-top:active .hotel-details {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.hotel-top .hotel-book {
+  font: inherit;
+  font-family: "PTSans-Bold", Arial, sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #766357;
+  background-repeat: no-repeat;
+}
+.hotel-top:hover .hotel-book,
+.hotel-top:focus .hotel-book {
+  color: #ffffff;
+  background-color: #604e43;
+}
+.hotel-top:active .hotel-book {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
