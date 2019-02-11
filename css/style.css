@@ -1,18 +1,15 @@
 body {
-  margin: 0;
-  font-family: "PTSans-Regular", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  background-image: url("../img/sedona-big.jpg");
   font-weight: normal;
   text-align: center;
+  background-color: #f2f2f2;
   text-transform: uppercase;
-  background-repeat: no-repeat;
 }
 .main-navigation {
   background-color: #ffffff;
-
 }
 .logo {
   display: block;
@@ -20,39 +17,73 @@ body {
   height: 71px;
   background: url("../img/logo-sedona.svg");
   background-repeat: no-repeat;
-
+  font-size: 0;
+}
+.welcome {
+  min-height: 510px;
+  width: 100%;
+  background-image: url("../img/sedona-big.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.welcome-text {
+  width: 495px;
+  height: 353px;
+  background-position: center;
+  font-size: 0;
+  display: block;
+  background-image: url("../img/welcome.svg");
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.maska {
+  width: 1201px;
+  height: 59px;
+  background-position: center;
+  font-size: 0;
+  display: block;
+  background-image: url("../img/mask.svg");
+  margin: 0 auto;
+  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;
 }
-.site-navigation:hover a,
-.site-navigation:focus a {
+.site-navigation-link {
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.site-navigation-link.active {
+  color: #766357;
+}
+.site-navigation-link:hover,
+.site-navigation-link:focus {
   color: #81b3d2;
 }
-.site-navigation:active a {
+.site-navigation-link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 .site-navigation {
   list-style: none;
 }
-.site-navigation a {
-  line-height: 26px;
-  color: #000000;
-  background-color: #ffffff;
-}
-.about p {
+.text-for-reason {
   line-height: 26px;
 }
-.about h2 {
-  font-family: "PTSans-Bold", Arial, sans-serif;
+.text-title {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
   font-weight: bold;
 }
-.reasons-item h3 {
-  font-family: "PTSans-Bold", Arial, sans-serif;
+.title {
   color: #000000;
   font-size: 21px;
   font-weight: bold;
@@ -60,15 +91,12 @@ a {
 .text-white {
   color: #ffffff;
   background-color: #81b3d2;
-
 }
 .reasons-item .text-white {
   background: #81b3d2;
   background-repeat: repeat;
-
 }
 .text-black {
-  font-family: "PTSans-Bold", Arial, sans-serif;
   color: #000000;
   background-color: #eeeeee;
   font-weight: bold;
@@ -76,23 +104,35 @@ a {
 .background-grey {
   background-color: #eeeeee;
 }
-.booking h2 {
-  font-family: "PTSans-Bold", Arial, sans-serif;
+.reasons-item {
+  list-style: none;
+}
+.more-reasons {
+  list-style: none;
+}
+.booking-form {
+  font: inherit;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.title-question {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
-  background-color: #ffffff;
   font-weight: bold;
 }
-.booking p {
+.booking-text-uppercase {
   line-height: 24px;
   color: #333333;
 }
-.booking-form .find {
-  font-family: "PTSans-Bold", Arial, sans-serif;
+.find {
+  font: inherit;
   font-size: 21px;
-  line-height: 26px;
-  text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
@@ -100,33 +140,31 @@ a {
   font-weight: bold;
 }
 .booking-form .text-white {
-  font-family: "PTSans-Bold", Arial, sans-serif;
+  font: inherit;
   font-size: 21px;
-  line-height: 26px;
   text-align: center;
   color: #ffffff;
   background-color: #766357;
   border: none;
   text-transform: uppercase;
-  font-weight: bold;
 }
-.booking-form:hover .text-white,
-.booking-form:focus .text-white {
+.booking-form .text-white:hover,
+.booking-form .text-white:focus {
   background-color: #604e43;
 }
-.booking-form:active .text-white {
+.booking-form .text-white:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
-.booking-form:hover  .find,
-.booking-form:focus  .find{
-    background-color: #669ec0;
+.find:hover,
+.find:focus {
+  background-color: #669ec0;
 }
-.booking-form:active .find {
+.find:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
-.booking-form input{
+.booking-form .input {
   font-family: "PTSans-Bold", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -135,45 +173,86 @@ a {
   font-weight: bold;
   align: left;
   text-transform: uppercase;
+  border: none;
 }
-.booking-form:hover input,
-.booking-form:focus input {
+.departure-date:hover,
+.departure-date:focus {
   color: #000000;
   background-color: #ebebeb;
 }
-.booking-form:active input{
+.departure-date:active {
   background-color: #ffffff;
-  border: 2px;
+  border: 2px solid #e5e5e5;
+  border-color: #e5e5e5;
+}
+.arrival-date:hover,
+.arrival-date:focus {
+  color: #000000;
+  background-color: #ebebeb;
+}
+.arrival-date:active {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
   border-color: #e5e5e5;
 }
 .booking-form label {
   font: inherit
-  font-family: "PTSans-Bold", Arial, sans-serif;
-  font-size: 14px;
   line-height: 26px;
-  color: #000000;
-  background-color: #ffffff;
-  font-weight: bold;
   align: left;
   text-transform: uppercase;
 }
-#adalt {
+.adult-count {
   font: inherit
-  font-family: "PTSans-Bold", Arial, sans-serif;
   line-height: 26px;
-  color: #000000;
   background-color: #f2f2f2;
-  font-weight: bold;
-  align: center;
+  text-align: center;
 }
-#children {
+.children-count {
   font: inherit
-  font-family: "PTSans-Bold", Arial, sans-serif;
   line-height: 26px;
-  color: #000000;
   background-color: #f2f2f2;
-  font-weight: bold;
-  align: center;
+  text-align: center;
+}
+.minus {
+  font: inherit;
+  background-color: #f2f2f2;
+}
+.plus {
+  font: inherit;
+  background-color: #f2f2f2;
+}
+.calendar {
+  font: inherit;
+  width: 38px;
+  height: 38px;
+  background-position: center;
+  font-size: 0;
+  display: block;
+  background-image: url("../img/calendar.svg");
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-color: #cacaca;
+}
+.calendar:hover,
+.calendar:focus {
+  background-color: #ffffff;
+}
+.calendar:active {
+  background-color: #81b3d2;
+}
+.minus:hover,
+.minus:focus {
+  background-color: #ffffff;
+}
+.minus:active {
+  background-color: #81b3d2;
+}
+.plus:hover,
+.plus:focus {
+  background-color: #ffffff;
+}
+.plus:active {
+  background-color: #81b3d2;
 }
 button.modal-close {
   color: #000000;
@@ -182,106 +261,166 @@ button.modal-close {
   border-color: #000000;
   display: none;
 }
-.main-footer span {
-  font-family: "PTSans-Bold", Arial, sans-serif;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.hashtag {
   font-size: 21px;
   line-height: 26px;
-  color: #000000;
   font-weight: bold;
-  background-color: #ffffff;
 }
 .footer-social {
-  text-align: center;
+  list-style: none;
 }
-.footer-social ul {
-  color
-}
-.footer-copyright span {
+.copyright {
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff;
 }
-.footer-copyright:hover img,
-.footer-copyright:focus img {
+.websiteby-button:hover,
+.websiteby-button:focus {
   background-color: #81b3d2;
 }
-.footer-copyright:active img {
+.websiteby-button:active {
   background-color: #bdbbbc;
 }
-
 .inner-page {
   color: #000000;
   background-color: #ffffff
   background-position: 0 0;
   background-repeat: no-repeat;
 }
-.hotel-name h3{
-  font-family: "PTSans-Bold", Arial, sans-serif;
+.hotel-name h3 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
   text-align: left;
-  background-color: #ffffff;
   background-repeat: no-repeat;
-
 }
 .hotel-name:hover h3,
 .hotel-name:focus h3 {
   color: #81b3d2;
   background-color: #ffffff;
 }
-.hotel-name:active h3, {
+.hotel-name:active h3 {
   color: rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
 }
 .hotel-top {
-  font-family: "PTSans-Regular", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-  font-weight: regular;
   text-align: left;
-  background-color: #ffffff;
-  background-repeat: repeat;
+  list-style: none;
 }
 .hotel-top .rate {
   color: #666666;
   text-align: center;
   background-color: #f2f2f2;
-  background-repeat: no-repeat;
 }
 .hotel-top .hotel-details {
   font: inherit;
-  font-family: "PTSans-Bold", Arial, sans-serif;
   color: #ffffff;
   font-weight: bold;
   background-color: #81b3d2;
-  background-repeat: no-repeat;
-}
-.hotel-top:hover .hotel-details,
-.hotel-top:focus .hotel-details {
-  color: #ffffff;
-  background-color: #669ec0;
-}
-.hotel-top:active .hotel-details {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5496bd;
 }
 .hotel-top .hotel-book {
   font: inherit;
-  font-family: "PTSans-Bold", Arial, sans-serif;
   color: #ffffff;
   font-weight: bold;
   background-color: #766357;
-  background-repeat: no-repeat;
 }
-.hotel-top:hover .hotel-book,
-.hotel-top:focus .hotel-book {
+.amara-book:hover,
+.amara-book:focus {
   color: #ffffff;
   background-color: #604e43;
 }
-.hotel-top:active .hotel-book {
+.amara-book:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+}
+.amara-details:hover,
+.amara-details:focus {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+.amara-details:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.desert-book:hover,
+.desert-book:focus {
+  color: #ffffff;
+  background-color: #604e43;
+}
+.desert-book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+.desert-details:hover,
+.desert-details:focus {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+.desert-details:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.villas-book:hover,
+.villas-book:focus {
+  color: #ffffff;
+  background-color: #604e43;
+}
+.villas-book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+.villas-details:hover,
+.villas-details:focus {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+.villas-details:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.social-link {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 0;
+  display: block;
+}
+.twitter-link {
+  background-image: url("../img/twitter.svg");
+}
+.twitter-link:hover,
+.twitter-link:focus {
+  background-color: #669ec0;
+}
+.twitter-link:active {
+  background-color: #5496bd;
+}
+.facebook-link {
+  background-image: url("../img/fb-icon.svg");
+}
+.facebook-link:hover,
+.facebook-link:focus {
+  background-color: #669ec0;
+}
+.facebook-link:active {
+  background-color: #5496bd;
+}
+.youtube-link {
+  background-image: url("../img/youtube.svg");
+}
+.youtube-link:hover,
+.youtube-link:focus {
+  background-color: #669ec0;
+}
+.youtube-link:active {
+  background-color: #5496bd;
 }
