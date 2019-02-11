@@ -13,7 +13,7 @@ body {
 }
 .logo {
   display: block;
-  width: 140;
+  width: 140px;;
   height: 71px;
   background: url("../img/logo-sedona.svg");
   background-repeat: no-repeat;
@@ -165,13 +165,13 @@ a {
   background-color: #5496bd;
 }
 .booking-form .input {
-  font-family: "PTSans-Bold", Arial, sans-serif;
+  font: inherit;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   background-color: #f2f2f2;
   font-weight: bold;
-  align: left;
+  text-align: left;
   text-transform: uppercase;
   border: none;
 }
@@ -196,19 +196,16 @@ a {
   border-color: #e5e5e5;
 }
 .booking-form label {
-  font: inherit
   line-height: 26px;
-  align: left;
+  text-align: left;
   text-transform: uppercase;
 }
 .adult-count {
-  font: inherit
   line-height: 26px;
   background-color: #f2f2f2;
   text-align: center;
 }
 .children-count {
-  font: inherit
   line-height: 26px;
   background-color: #f2f2f2;
   text-align: center;
@@ -289,7 +286,7 @@ button.modal-close {
 }
 .inner-page {
   color: #000000;
-  background-color: #ffffff
+  background-color: #ffffff;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
