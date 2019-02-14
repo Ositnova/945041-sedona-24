@@ -12,19 +12,25 @@
       <header class="main-header">
         <nav class="main-navigation">
           <a class="logo" href="index.html">Логотип Седоны</a>
-          <ul class="site-navigation">
-            <li><a href="info.html" class="site-navigation-link">информация</a></li>
-            <li><a href="photo.html" class="site-navigation-link">фото и фидео</a></li>
-            <li><a href="map.html" class="site-navigation-link">карта штата</a></li>
-            <li><a href="hotel.html" class="site-navigation-link active">гостиницы</a></li>
-          </ul>
+          <div class="column-left">
+            <ul class="site-navigation">
+              <li><a href="info.html" class="site-navigation-link">информация</a></li>
+              <li><a href="photo.html" class="site-navigation-link">фото и видео</a></li>
+            </ul>
+          </div>
+          <div class="column-right">
+            <ul class="site-navigation">
+              <li><a href="map.html" class="site-navigation-link">карта штата</a></li>
+              <li><a href="hotel.html" class="site-navigation-link">гостиницы</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main class="content">
         <section class="hotels">
           <h2 class="visually-hidden">гостиницы</h2>
           <ul class="hotel-top">
-            <li>
+            <li class="hotel">
               <a class="hotel-name" href="#"><h3>amara resort & spa</h3></a>
               <img src="img/amara.jpg" width="135" height="90" alt="фотогафия отеля amara">
               <span>гостиница от 4000 Р.</span>
@@ -33,7 +39,7 @@
               <img src="img/star.svg" width="18" height="17" alt="категория отеля 5 звезд">
               <span class="rate">рейтинг: 8,5</span>
             </li>
-            <li>
+            <li class="hotel">
               <a class="hotel-name" href="#"><h3>desert quail inn</h3></a>
               <img src="img/desert.jpg" width="135" height="90" alt="фотогафия мотеля desert">
               <span>мотель от 3000 Р.</span>
@@ -42,7 +48,7 @@
               <img src="img/star.svg" width="18" height="17" alt="категория отеля 3 звезды">
               <span class="rate">рейтинг: 8,9</span>
             </li>
-            <li>
+            <li class="hotel">
               <a class="hotel-name" href="#"><h3>villas at poco diablo</h3></a>
               <img src="img/villas.jpg" width="135" height="90" alt="фотогафия апартаментов villas">
               <span>апартаменты от 2000 Р.</span>
@@ -55,6 +61,7 @@
         </section>
       </main>
       <footer class="main-footer">
+        <div class="footer-wrapper">
         <span class="hashtag">#VISITSEDONA</span>
         <ul class="footer-social">
           <li><a class="social-link twitter-link" href="#">Twitter</a>
@@ -66,6 +73,7 @@
           <a class="websiteby-button" href="https://htmlacademy.ru" aria-label="htmlacademy">
             <img src="img/logo-htmlacademy.svg" width="140" height="71" alt="Логотип разработчика сайта htmlacademy">
           </a>
+        </div>
         </div>
       </footer>
     </div>

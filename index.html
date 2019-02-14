@@ -12,12 +12,18 @@
       <header class="main-header">
         <nav class="main-navigation">
           <a class="logo" href="index.html">Логотип Седоны</a>
-          <ul class="site-navigation">
-            <li><a href="info.html" class="site-navigation-link">информация</a></li>
-            <li><a href="photo.html" class="site-navigation-link">фото и фидео</a></li>
-            <li><a href="map.html" class="site-navigation-link">карта штата</a></li>
-            <li><a href="hotel.html" class="site-navigation-link">гостиницы</a></li>
-          </ul>
+          <div class="column-left">
+            <ul class="site-navigation">
+              <li><a href="info.html" class="site-navigation-link">информация</a></li>
+              <li><a href="photo.html" class="site-navigation-link">фото и видео</a></li>
+            </ul>
+          </div>
+          <div class="column-right">
+            <ul class="site-navigation">
+              <li><a href="map.html" class="site-navigation-link">карта штата</a></li>
+              <li><a href="hotel.html" class="site-navigation-link">гостиницы</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main class="content">
@@ -29,25 +35,32 @@
           <div class="maska"></div>
         </section>
         <section class="about">
-          <h2 class="text-title">седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="text-for-reason">рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-          <section class="reasons-item">
+          <div class="about-sedona">
+            <h2 class="text-title">седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="text-for-reason">рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>
+<div class="order-element">
+        <div class="case1">
+          <section class="reasons-item reasons-item1">
             <h3 class="text-white title">настоящий городок</h3>
             <p class="text-uppercase text-white">-№1-</p>
             <p class="text-uppercase text-white">седона-не атракцион для туристов, там течет своя жизнь</p>
           </section>
-          <div class="picture">
+          <div class="picture picture-right">
             <img src="img/reason1.jpg" width="800" height="256" alt="фото Седоны для раздела 5 причин">
           </div>
-          <section class="reasons-item">
+        </div>
+        <div class="case2">
+          <section class="reasons-item reasons-item2">
             <h3 class="text-white title">там есть мост дьявола</h3>
             <p class="text-uppercase text-white">-№2-</p>
             <p class="text-uppercase text-white">да, по нему можно пройтись! если конечно вы осмелитесь</p>
           </section>
-          <div class="picture">
+          <div class="picture picture-left">
             <img src="img/reason2.jpg" width="800" height="256" alt="еще фото Седоны для раздела 5 причин">
           </div>
-          <ul class="reasons-item">
+        </div>
+          <ul class="reasons-item reasons-item3">
             <li class="reasons-item">
               <h3 class="text-black title">небольшая площадь</h3>
               <p class="text-uppercase background-grey">-№3-</p>
@@ -64,7 +77,7 @@
               <p class="text-uppercase background-grey">большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
-          <div class="more-reasons">
+          <div class="more-reasons-div">
             <ul class="more-reasons">
               <li class="reasons-item">
                 <img src="img/icon-1.svg" width="75" height="72" alt="жилье">
@@ -83,30 +96,34 @@
               </li>
             </ul>
           </div>
+        </div>
         </section>
+      <div class="booking-map">
         <section class="booking">
-          <h2 class="title-question">заинтересовались?</h2>
-          <p class="booking-text-uppercase ">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <div class="booking-question">
+            <h2 class="title-question">заинтересовались?</h2>
+            <p class="booking-text-uppercase ">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          </div>
           <div class="booking-form">
             <button class="button text-white">поиск гостиницы в седоне</button>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <div class="booking-form">
+              <div class="booking-form-request">
                 <label for="arrival">дата заезда</label>
                 <input type="text" id="arrival" class="input arrival-date" value="24 апреля 2017">
                 <div class="button calendar"></div>
               </div>
-              <div class="booking-form bold">
+              <div class="booking-form-request bold">
                 <label for="departure">дата выезда</label>
                 <input type="text" id="departure" class="input departure-date" value="4 июля 2017">
                 <div class="button calendar"></div>
               </div>
-              <div class="booking-form bold">
+              <div class="booking-form-request bold">
                 <label for="adult">взрослые</label>
                 <input type="text" id="adalt" class="input adult-count" value="2">
                 <button class="button minus">-</button>
                 <button class="button plus">+</button>
               </div>
-              <div class="booking-form bold">
+              <div class="booking-form-request bold">
                 <label for="children">дети</label>
                 <input type="text" id="children" class="input children-count" value="0">
                 <button class="button minus">-</button>
@@ -121,8 +138,10 @@
           <p><img src="img/map.png" width="1200" height="593" alt="Карта как доехать до Седоны"></p>
           <button class="modal-close">закрыть</button>
         </section>
+      </div>
       </main>
       <footer class="main-footer">
+        <div class="footer-wrapper">
         <span class="hashtag">#VISITSEDONA</span>
         <ul class="footer-social">
           <li><a class="social-link twitter-link" href="#">Twitter</a>
@@ -134,6 +153,7 @@
           <a class="websiteby-button" href="https://htmlacademy.ru" aria-label="htmlacademy">
             <img src="img/logo-htmlacademy.svg" width="140" height="71" alt="Логотип разработчика сайта htmlacademy">
           </a>
+        </div>
         </div>
       </footer>
     </div>

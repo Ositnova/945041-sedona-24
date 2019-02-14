@@ -12,13 +12,129 @@ body {
   background-color: #ffffff;
 }
 .logo {
-  display: block;
   width: 140px;;
   height: 71px;
   background: url("../img/logo-sedona.svg");
   background-repeat: no-repeat;
   font-size: 0;
+  margin-left: 0 53px 0 51px;
 }
+/* ----- Сеточные стили блок навигации ----- */
+
+.body {
+  min-width: 1280px;
+  min-height: 2762px;
+}
+.container {
+  width: 1200px;
+  min-height: 2762px;
+  margin: 0 auto;
+}
+.main-header {
+  min-height: 71px;
+  margin-bottom: 0px;
+}
+.main-navigation {
+  min-width: 1200px;
+  min-height: 56px;
+  display: flex;
+  background-color: pink;
+  justify-content: center;
+}
+.column-right {
+  width: 478px;
+  margin: 0 56px;
+}
+.column-left {
+  width: 478px;
+  margin: 0 56px;
+  order: -1;
+}
+/*сетка блок навигации конец*/
+
+/*сетка центр*/
+
+.welcome {
+  min-height: 508px;
+  min-width: 1200px;
+}
+.content {
+  width: 1200px;
+  min-height: 2586px;
+}
+.about-sedona {
+  min-height: 99px;
+  width: 489px;
+  padding: 61px 356px 56px 355px;
+}
+.booking-map {
+  min-height: 884px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.booking-question {
+  min-height: 96px;
+  background-color: #ffffff;
+  width: 434px;
+  padding: 57px 383px 138px 383px;
+}
+.map {
+  width: 1200px;
+  height: 593px;
+}
+.booking-form {
+  width: 568px;
+  min-height: 481px;
+  margin: 0 auto;
+}
+/*начало сетки футера*/
+.main-footer {
+  padding: 36px 0;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 120px;
+  background-color: green;
+}
+.main-footer .footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.hashtag {
+  width: 140px;
+}
+.footer-social {
+  width: 150px;
+}
+.footer-copyright {
+  width: 200px;
+}
+/*конец сетки футера*/
+
+
+/*сетка страницы 2*/
+.content {
+  width: 1200px;
+  min-height: 540px;
+  margin: 0;
+  padding: 0;
+}
+.hotel-top {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.hotel {
+  min-height: 150px;
+  width: 1200px
+  margin-right: 72px;
+  margin-left: 72px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/****конец 2 страницы*/
 .welcome {
   min-height: 510px;
   width: 100%;
