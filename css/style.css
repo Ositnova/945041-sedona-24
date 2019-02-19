@@ -29,16 +29,12 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.main-header {
-  min-height: 71px;
-  margin-bottom: 0px;
-}
 .main-navigation {
   position: relative;
 }
 .site-navigation li {
   width: 239px;
-  padding: 22px 0;
+  padding: 15px 0;
 }
 .site-navigation li:nth-child(2) {
   margin-right: 122px;
@@ -98,7 +94,6 @@ body {
   margin: 0;
   padding: 0;
 justify-content: space-between;
-
 }
 .more-reasons {
   display: flex;
@@ -125,6 +120,11 @@ justify-content: space-between;
 .booking-form {
   width: 568px;
   margin: 0 auto;
+}
+.button {
+  display: inline-block;
+padding: 3px 16px;
+margin-right: 6px;
 }
 
 /*начало сетки футера*/
@@ -158,6 +158,32 @@ justify-content: space-between;
   margin: 0;
   padding: 0;
 }
+.search-hotel {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding: 31px 72px 31px 72px;
+}
+.infrastructure-wrapper {
+  padding-right: 115px;
+}
+.price-wrapper {
+  padding-left: 349px;
+}
+.sort {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding: 31px 72px 31px 72px;
+   align-items: center;
+}
+.result {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
 .hotel-top {
   padding: 0;
   margin: 0;
@@ -180,18 +206,35 @@ justify-content: space-between;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
-
 }
 .hotel-rate {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   justify-content: space-between;
+
+}
+.rate {
+  margin-top: 47px;
+}
+.hotel-name {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.span {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.price-from {
+  min-width: 110px;
+  margin-right: 6px;
+
 }
 .buttons {
-  display: flex;
-  justify-content: space-around;
+  display: inline-block;
+
 }
 .padding {
   padding: 31px 72px;
@@ -226,7 +269,6 @@ a {
   text-decoration: none;
 }
 .site-navigation-link {
-  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
 }

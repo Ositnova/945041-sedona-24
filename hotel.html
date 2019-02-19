@@ -21,6 +21,40 @@
         </nav>
       </header>
       <main class="content">
+        <section class="search-hotel">
+          <div class="infrastructure-wrapper"
+          <h3>инфраструктура:</h3>
+        <ul class="infrastructure">
+          <li>бассейн</li>
+          <li>парковка</li>
+          <li>wi-fi</li>
+        </ul>
+      </div>
+      <div class="accommodation-wrapper"
+        <h3>тип жилья:</h3>
+        <ul class="accommodation">
+          <li>гостиница</li>
+          <li>мотель</li>
+          <li>апартаменты</li>
+        </ul>
+      </div>
+      <div class="price-wrapper"
+        <h3>стоимость в сутки (р):</h3>
+        <p>от 0 до 3000</p>
+        <input type="range" min="0" max="4000">
+        <button class="button" type="submit">показать</button>
+      </div>
+        </section>
+        <section class="sort">
+        <p>найдено: 3</p>
+        <h4>сортировка:</h4>
+        <ul class="result">
+        <li>по цене</li>
+        <li>по типу</li>
+        <li>по рейтингу</li>
+      </ul>
+    </section>
+
         <section class="hotels">
           <h2 class="visually-hidden">гостиницы</h2>
 
@@ -30,7 +64,10 @@
           <img src="img/amara.jpg" width="135" height="90" alt="фотогафия отеля amara">
           <div class="hotel-container">
             <a class="hotel-name" href="#"><h3>amara resort & spa</h3></a>
-            <span>гостиница от 4000 Р.</span>
+          <div class="span">
+            <span class="price-from" >гостиница</span>
+            <span class="price-from">от 4000 Р.</span>
+          </div>
           <div class="buttons">
             <a class="button hotel-details amara-details" href="#">подробнее</a>
             <a class="button hotel-book amara-book" href="#">забронировать</a>
@@ -46,7 +83,10 @@
             <img src="img/desert.jpg" width="135" height="90" alt="фотогафия мотеля desert">
           <div class="hotel-container">
             <a class="hotel-name" href="#"><h3>desert quail inn</h3></a>
-            <span>мотель от 3000 Р.</span>
+          <div class="span">
+            <span class="price-from">мотель</span>
+            <span class="price-from">от 3000 Р.</span>
+          </div>
           <div class="buttons">
             <a class="button hotel-details desert-details" href="#">подробнее</a>
             <a class="button hotel-book desert-book" href="#">забронировать</a>
@@ -62,7 +102,10 @@
             <img src="img/villas.jpg" width="135" height="90" alt="фотогафия апартаментов villas">
           <div class="hotel-container">
             <a class="hotel-name" href="#"><h3>villas at poco diablo</h3></a>
-            <span>апартаменты от 2000 Р.</span>
+          <div class="span">
+            <span class="price-from">апартаменты</span>
+            <span class="price-from">от 2000 Р.</span>
+          </div>
           <div class="buttons">
             <a class="button hotel-details villas-details" href="#">подробнее</a>
             <a class="button hotel-book villas-book" href="#">забронировать</a>
