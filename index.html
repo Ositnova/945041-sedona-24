@@ -36,7 +36,7 @@
           <section class="reasons-item1">
             <div class="reasons-item background-blue">
               <h3 class="text-white title">настоящий городок</h3>
-              <p class="text-uppercase text-white">-№1-</p>
+              <p class="text-uppercase text-white">- №1 -</p>
               <p class="text-uppercase text-white">седона-не атракцион для туристов, там течет своя жизнь</p>
             </div>
             <img src="img/reason1.jpg" width="800" height="256" alt="фото Седоны для раздела 5 причин">
@@ -63,7 +63,7 @@
           <section class="reasons-item2">
             <div class="reasons-item background-blue order">
             <h3 class="text-white title">там есть мост дьявола</h3>
-            <p class="text-uppercase text-white">-№2-</p>
+            <p class="text-uppercase text-white">- №2 -</p>
             <p class="text-uppercase text-white">да, по нему можно пройтись! если конечно вы осмелитесь</p>
           </div>
           <img src="img/reason2.jpg" width="800" height="256" alt="еще фото Седоны для раздела 5 причин">
@@ -72,17 +72,17 @@
           <ul class="reasons-item reasons-item3">
             <li class="reasons-item background-grey">
               <h3 class="text-black title">небольшая площадь</h3>
-              <p class="text-uppercase background-grey">-№3-</p>
+              <p class="text-uppercase background-grey">- №3 -</p>
               <p class="text-uppercase background-grey">все достопримечательности находятся очень близко</p>
             </li>
             <li class="reasons-item background-grey">
               <h3 class="text-black title">красивая дорога</h3>
-              <p class="text-uppercase background-grey">-№4-</p>
+              <p class="text-uppercase background-grey">- №4 -</p>
               <p class="text-uppercase background-grey">ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
             <li class="reasons-item background-grey">
               <h3 class="text-black title">мало туристов</h3>
-              <p class="text-uppercase background-grey">-№5-</p>
+              <p class="text-uppercase background-grey">- №5 -</p>
               <p class="text-uppercase background-grey">большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
@@ -92,43 +92,43 @@
           <div class="booking-question">
             <h2 class="title-question">заинтересовались?</h2>
             <p class="booking-text-uppercase ">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <div class="booking-form ">
+          <div class="search-request">
              <button class="button text-white">поиск гостиницы в седоне</button>
           </div>
           </div>
-              <div class="booking-map booking-form">
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <div class="booking-form-request">
-                <label for="arrival">дата заезда</label>
+          <div class="booking-map booking-form">
+
+            <div class="booking-form-request">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p class="appointment-item"><label for="arrival">дата заезда:</label>
                 <input type="text" id="arrival" class="input arrival-date" value="24 апреля 2017">
-                <div class="button calendar"></div>
-              </div>
-              <div class="booking-form-request bold">
-                <label for="departure">дата выезда</label>
+                <div class="button calendar calendar1"></div></p>
+
+                <p class="appointment-item">
+                <label for="departure">дата выезда:</label>
                 <input type="text" id="departure" class="input departure-date" value="4 июля 2017">
-                <div class="button calendar"></div>
-              </div>
-              <div class="booking-form-request bold">
-                <label for="adult">взрослые</label>
+                <div class="button calendar2"></div></p>
+
+                <p class="appointment-item-ac"><label for="adult">взрослые:</label>
+                <button class="button minus">-</button>
                 <input type="text" id="adalt" class="input adult-count" value="2">
-                <button class="button minus">-</button>
                 <button class="button plus">+</button>
-              </div>
-              <div class="booking-form-request bold">
-                <label for="children">дети</label>
+                <label for="children">дети:</label>
+                <button class="button minus">-</button>
                 <input type="text" id="children" class="input children-count" value="0">
-                <button class="button minus">-</button>
-                <button class="button plus">+</button>
-              </div>
-              <button class="button find" type="submit">найти</button>
-            </form>
+                <button class="button plus">+</button></p>
+
+                <button class="button find" type="submit">найти</button>
+              </form>
+            </div>
+          </div>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Как добраться до Седоны</h2>
           <p><img src="img/map.png" width="1200" height="593" alt="Карта как доехать до Седоны"></p>
           <button class="modal-close">закрыть</button>
         </section>
-      </div>
+
       </main>
       <footer class="main-footer">
         <span class="hashtag">#VISITSEDONA</span>

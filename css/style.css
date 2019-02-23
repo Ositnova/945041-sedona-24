@@ -22,9 +22,6 @@ body {
   left: 50%;
   margin-left: -70px;
 }
-/* ----- Сеточные стили блок навигации ----- */
-
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -42,29 +39,40 @@ body {
 .site-navigation li:nth-child(3) {
   margin-left: 122px;
 }
-/*сетка блок навигации конец*/
-
-/*сетка центр*/
-
 .welcome {
   min-height: 508px;
   min-width: 1200px;
-}
-.content {
-  width: 1200px;
-  min-height: 2586px;
+  background-image: url("../img/mask.svg"), url("../img/sedona-big.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center center;
+  background-size: contain, cover;
 }
 .about-sedona {
   min-height: 99px;
   width: 489px;
   padding: 61px 356px 56px 355px;
 }
-
-
 .reasons-item1 {
   display: flex;
   margin: 0;
   padding: 0;
+}
+.reasons-item1 h3 {
+  margin: 0;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.reasons-item1 p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.reasons-item1 p:last-child {
+  margin: 0;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 .reasons-item2 {
   display: flex;
@@ -74,6 +82,23 @@ body {
 .order {
   order: 1;
 }
+.reasons-item2 h3 {
+  margin: 0;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.reasons-item2 p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.reasons-item2 p:last-child {
+  margin: 0;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
 .background-blue {
   background-color: #81b3d2;
   padding-top: 30px;
@@ -82,52 +107,105 @@ body {
   background-color: #eeeeee;
   width: 400px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 28px;
   }
+.reasons-item3 h3 {
+  padding-left: 130px;
+  padding-right: 150px;
+  text-align: center;
+}
 .background-white {
   margin: 0;
   width: 400px;
-  padding-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 65px;
+  padding-left: 50px;
+  padding-right: 60px;
+}
+.background-white:last-child {
+  padding-left: 50px;
 }
 .reasons-item3 {
   display: flex;
   margin: 0;
   padding: 0;
-justify-content: space-between;
+  justify-content: space-between;
 }
 .more-reasons {
   display: flex;
   margin: 0;
   padding: 0;
 }
-.booking-map {
-  min-height: 884px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
 .booking-question {
   background-color: #ffffff;
   width: 568px;
-  margin: 0;
   padding: 57px 316px 0 316px;
+}
+.booking-question h2 {
+  padding-bottom: 12px;
+}
+.booking-question p {
+  padding-bottom: 20px;
+}
+.booking-form-request {
+  width: 458px;
+  display: block;
 }
 .map {
   width: 1200px;
   height: 593px;
+  position: relative;
 }
-.booking-form {
-  width: 568px;
-  margin: 0 auto;
+.booking-map {
+  width: 460px;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+  padding: 55px;
+  margin-left: 316px;
+  margin-right: 316px;
+  margin-top: 0;
 }
 .button {
   display: inline-block;
-padding: 3px 16px;
-margin-right: 6px;
+  padding: 3px 16px;
+  margin-right: 4px;
 }
-
-/*начало сетки футера*/
+.button[type="submit"] {
+  padding: 17px 195px 20px 195px;
+  width: 100%;
+}
+.booking-form-wrapper {
+  width: 449px;
+}
+.appointment-item label {
+  display: block;
+  margin: 0;
+  margin-bottom: 29px;
+}
+.appointment-item input {
+  box-sizing: border-box;
+  width: 346px;
+  padding: 8px 230px 8px 13px;
+  margin: 0;
+}
+.appointment-item label {
+  display: block;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 40px;
+}
+.appointment-item-ac input {
+  box-sizing: border-box;
+  width: 38px;
+  padding: 8px 16px 8px 15px;
+  margin: 0;
+}
+.departure-date,
+.arrival-date {
+  width: 346px;
+}
 .main-footer {
   margin: 0;
   padding: 36px 101px 36px 132px;
@@ -135,7 +213,7 @@ margin-right: 6px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 2px solid rgba(0, 1, 1, 0.2);
+  border-top: 1px solid rgba(0, 1, 1, 0.2);
 }
 .footer-social {
   display: flex;
@@ -147,11 +225,6 @@ margin-right: 6px;
 .copyright {
   margin-right: 8px;
 }
-/*конец сетки футера*/
-
-
-/*сетка страницы 2*/
-
 .content {
   width: 1200px;
   min-height: 716px;
@@ -175,7 +248,7 @@ margin-right: 6px;
   padding: 0;
   display: flex;
   padding: 31px 72px 31px 72px;
-   align-items: center;
+  align-items: center;
 }
 .result {
   margin: 0;
@@ -193,12 +266,11 @@ margin-right: 6px;
 
 }
 .hotel {
-  border-top: 2px solid rgba(0, 1, 1, 0.2);
+  border-top: 1px solid rgba(0, 1, 1, 0.2);
   display: flex;
   align-items: center;
-
-
 }
+
 .hotel-container {
   margin-left: 30px;
   margin-bottom: 30px;
@@ -212,7 +284,6 @@ margin-right: 6px;
   flex-direction: column;
   margin-left: auto;
   justify-content: space-between;
-
 }
 .rate {
   margin-top: 47px;
@@ -230,24 +301,12 @@ margin-right: 6px;
 .price-from {
   min-width: 110px;
   margin-right: 6px;
-
 }
 .buttons {
   display: inline-block;
-
 }
 .padding {
   padding: 31px 72px;
-}
-
-/****конец 2 страницы*/
-.welcome {
-  min-height: 510px;
-  width: 100%;
-  background-image: url("../img/mask.svg"), url("../img/sedona-big.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom, center center;
-  background-size: contain, cover;
 }
 .container {
   width: 1200px;
@@ -264,7 +323,6 @@ margin-right: 6px;
   margin: 0 auto;
   background-repeat: no-repeat;
 }
-
 a {
   text-decoration: none;
 }
@@ -354,7 +412,7 @@ a {
   text-transform: uppercase;
   font-weight: bold;
 }
-.booking-form .text-white {
+.search-request .text-white {
   font: inherit;
   font-size: 21px;
   text-align: center;
@@ -362,12 +420,27 @@ a {
   background-color: #766357;
   border: none;
   text-transform: uppercase;
+  padding: 30px 135px;
+  width: 568px;
+  font-weight: bold;
 }
-.booking-form .text-white:hover,
-.booking-form .text-white:focus {
+.calendar1 {
+  position: absolute;
+  z-index: 1;
+  top: 125px;
+  right: 95px;
+}
+.calendar2 {
+  position: absolute;
+  z-index: 1;
+  top: 155px;
+  right: 95px;
+}
+.search-request .text-white:hover,
+.search-request .text-white:focus {
   background-color: #604e43;
 }
-.booking-form .text-white:active {
+.search-request .text-white:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
@@ -443,14 +516,6 @@ a {
   background-image: url("../img/calendar.svg");
   margin: 0 auto;
   background-repeat: no-repeat;
-  background-color: #cacaca;
-}
-.calendar:hover,
-.calendar:focus {
-  background-color: #ffffff;
-}
-.calendar:active {
-  background-color: #81b3d2;
 }
 .minus:hover,
 .minus:focus {
