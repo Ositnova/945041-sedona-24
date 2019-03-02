@@ -150,7 +150,6 @@ body {
 }
 .booking-form-request {
   width: 458px;
-  display: block;
 }
 .map {
   width: 1200px;
@@ -175,12 +174,14 @@ body {
 .button[type="submit"] {
   padding: 17px 195px 20px 195px;
   width: 100%;
+  margin-top: 40px;
 }
 .booking-form-wrapper {
   width: 449px;
 }
-.appointment-item label {
-  display: block;
+.appointment-item {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 29px;
 }
@@ -191,11 +192,11 @@ body {
   margin: 0;
 }
 .appointment-item label {
-  display: block;
-  margin: 0;
-  margin-bottom: 29px;
-  padding-left: 40px;
+  padding-right: 20px;
+  text-align: center;
+  padding-top: 8px;
 }
+
 .appointment-item-ac input {
   box-sizing: border-box;
   width: 38px;
@@ -428,7 +429,7 @@ a {
   position: absolute;
   z-index: 1;
   top: 125px;
-  right: 95px;
+  right: 60px;
 }
 .calendar2 {
   position: absolute;
